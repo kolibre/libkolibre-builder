@@ -226,7 +226,11 @@ cd $CWD
 # build messages.db using narrator utils
 prompts=$PWD/libkolibre/clientcore/prompts/prompts.csv
 messages=$PWD/libkolibre/clientcore/prompts/messages.csv
-translations=$PWD/libkolibre/clientcore/prompts/en/translations.csv
+translations_en=$PWD/libkolibre/clientcore/prompts/en/translations.csv
+translations_sv=$PWD/libkolibre/clientcore/prompts/sv/translations.csv
+translations_fi=$PWD/libkolibre/clientcore/prompts/fi/translations.csv
 mkdir -p ${prefix}/share/libkolibre-narrator
 output=${prefix}/share/libkolibre-narrator/messages.db
-${prefix}/bin/narrator-utils -p ${prompts} -m ${messages} -t ${translations} -l en -o ${output}
+${prefix}/bin/narrator-utils -p ${prompts} -m ${messages} -t ${translations_en} -l en -o ${output}
+${prefix}/bin/narrator-utils -p ${prompts} -m ${messages} -t ${translations_sv} -l sv -o ${output} -a
+${prefix}/bin/narrator-utils -p ${prompts} -m ${messages} -t ${translations_fi} -l fi -o ${output} -a
