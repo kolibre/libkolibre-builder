@@ -73,4 +73,3 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with libkolibre-builder. If not, see <http://www.gnu.org/licenses/>.
 
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/6d0b0d8cebf269e4f560f54b94609b8a "githalytics.com")](http://githalytics.com/kolibre/libkolibre-builder)
